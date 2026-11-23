@@ -1,0 +1,16 @@
+# Swift Package Manager 生成目录
+.build/
+.swiftpm/
+
+# Xcode 构建及个人配置
+DerivedData/
+build/
+xcuserdata/
+*.xcuserstate
+
+# 覆盖率与性能分析数据
+*.profraw
+*.profdata
+
+# macOS 文件元数据
+.DS_Store
