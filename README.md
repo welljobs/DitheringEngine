@@ -120,7 +120,7 @@ let descriptor = try CImageDescriptor(
 
 ## 数据压缩
 
-`Data.compress()` 和 `Data.decompress()` 使用裸 LZSS 格式。该格式与 minilzo / LZO 不兼容；EinkAPP 的设备通信使用 `FMCompressUtils` 对应的压缩格式。
+`Data.compress()` 和 `Data.decompress()` 使用裸 LZSS 格式。该格式与 minilzo / LZO 不兼容；与采用 LZO 的设备通信时，应使用设备协议规定的编解码器。
 
 ```swift
 let compressed = deviceBytes.compress()

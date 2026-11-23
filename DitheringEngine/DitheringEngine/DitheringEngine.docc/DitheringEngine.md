@@ -118,7 +118,7 @@ for try await event in Dithering.ditherStream(
 
 解压支持可选的 `expectedSize` 和 `maxOutputSize`，分别校验解压长度和限制输出大小。裸格式没有原始长度或校验和，无法检测全部截断与内容损坏。
 
-LZSS 与 minilzo / LZO 的数据格式不兼容。EinkAPP 的设备通信链使用 `FMCompressUtils` 对应的压缩格式。
+LZSS 与 minilzo / LZO 的数据格式不兼容。与采用 LZO 的设备通信时，应使用设备协议规定的编解码器。
 
 ## Topics
 
